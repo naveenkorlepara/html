@@ -1,0 +1,175 @@
+.header{
+  height: 55px;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  top:0;
+  left:0;
+  right:0;
+  position:fixed;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-style:solid;
+  border-color: rgb(239, 237, 237);
+  z-index: 100;
+}
+.left{
+  display: flex;
+  align-items: center;
+ 
+  
+}
+.menu{
+  height:20px;
+  margin-right:30px;
+  margin-left: 20px;
+
+}
+.logo{
+  height:20px;
+}
+.middle{
+  display:flex;
+  flex:1;
+  justify-content: center;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  
+  align-items: center;
+}
+
+.search-bar{
+  display: flex;
+  flex:1;
+   height:34px;
+   border-top-left-radius: 2px;
+   border-bottom-left-radius: 2px;
+
+   border:1px solid rgb(172, 170, 170);
+   box-shadow:inset 1px 2px 2px rgb(0, 0, 0,0.05);
+  font-size: 16px;
+  padding-left:10px;
+  width:0;
+
+  
+
+
+}
+.search-bar::placeholder{
+  font-family: Roboto,Arial;
+  font-size: 14px;
+  margin-right:10px;
+  
+}
+
+
+.search-icon{
+  height: 37px;
+  width:60px;
+  background-color: rgb(239, 237, 237);
+  border:1px solid rgba(192,192,192);
+  margin-left:-1px;
+  margin-right: 10px;
+  border-top-right-radius: 2px;
+   border-bottom-right-radius: 2px;
+  cursor:pointer;
+
+
+}
+.search-icon,.voice-search,.upload-container,.ytapps-container,.noti-area,.channel-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+
+
+}
+
+.search-pic{
+  width:20px;
+  margin-top:5px;
+
+}
+ .search-icon .searchbar-tooltip,.voice-search .voice-tooltip, .upload-tooltip,.ytapps-tooltip,.noti-tooltip,.channel-tooltip{
+
+ position:absolute;
+ background-color: rgb(188, 187, 187);
+ padding:4px 8px;
+ color:white;
+ border-radius:2px;
+ font-size:12px;
+ bottom:-30px;
+ opacity:0;
+ transition: opacity 0.15s;
+
+ pointer-events: none;
+ white-space: nowrap;
+
+
+
+}
+.voice-search:hover .voice-tooltip,
+  .search-icon:hover .searchbar-tooltip,.upload-container:hover .upload-tooltip,
+  .ytapps-container:hover .ytapps-tooltip,.noti-area:hover .noti-tooltip,.channel-container:hover .channel-tooltip{
+  opacity:1;
+}
+
+
+.voice-search{
+  height:40px;
+  width:40px;
+  border-radius:20px;
+  border:none;
+  background:rgb(247, 243, 243) ;
+  cursor: pointer;
+
+
+
+}
+.voice-pic{
+  width:23px
+
+}
+
+
+.right{
+  width: 200px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink:0;
+}
+.upload-icon{
+  width:23px;
+}
+.youtubeapp-icon{
+  width:23px;
+
+}
+.noti-area{
+  position: relative;
+}
+.noti-icon{
+  width:23px;
+
+}
+.noti-value{
+  top:-1px;
+  right:-1px;
+  position:absolute;
+  background-color:red;
+  color: white;
+  /* padding-top:2px; */
+  /* padding-bottom:2px; */
+  padding-left:4px;
+  padding-right:4px;
+  border-radius:10px;
+  font-size:11px;
+  
+}
+.channel-icon{
+  width:30px;
+
+}
